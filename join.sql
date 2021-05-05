@@ -39,6 +39,7 @@ CREATE TABLE bolumler (
      
     SELECT * FROM personel;
    SELECT *FROM BOLUMLER ;
+  DROP * FROM PERSONEL ;
 /* -----------------------------------------------------------------------------
   ORNEK1: SATIS ve MUHASABE bolumlerinde calisan personelin isimlerini ve 
   bolumlerini, once bolum sonra isim sýralý olarak listeleyiniz
@@ -60,9 +61,10 @@ SELECT P.personel_isim,B.BOLUM_ISIM,P.ISE_BASLAMA
  ORDER BY P.PERSONEL_ISIM ;
  
 
+COMMIT;
 
-
-
+SELECT * FROM isciler;
+DROP TABLE ISCILER ;
 
 
 
